@@ -18,7 +18,7 @@ const Bio: React.FC<BioProps> = (props) => {
     const { text } = props;
 
     return (
-        <Stack id="bio" direction={{ base: 'column', md: 'row' }} bg='gray.50'>
+        <Stack id="bio" direction={{ base: 'column-reverse', md: 'row' }} bg='gray.50'>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
                     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
