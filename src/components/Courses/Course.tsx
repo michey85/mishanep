@@ -34,7 +34,8 @@ const Course: React.FC<CourseProps> = (props) => {
                 boxShadow={'2xl'}
                 rounded={'lg'}
                 p={6}
-                textAlign={'center'}>
+                textAlign={'center'}
+            >
                 <Avatar
                     size={'xl'}
                     src={poster}
@@ -57,8 +58,9 @@ const Course: React.FC<CourseProps> = (props) => {
                 </Text>
 
                 <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-                    {tags.map(tag => (
+                    {tags.map((tag, index) => (
                         <Badge
+                            key={index}
                             px={2}
                             py={1}
                             bg="gray.50"
