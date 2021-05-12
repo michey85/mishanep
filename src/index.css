@@ -1,0 +1,34 @@
+.swiper-container {
+    width: 320px;
+  }
+.facebook-iframe {
+    width: 250px;
+    height: 500px;
+}
+
+    @media screen and (min-width: 440px) {
+        .swiper-container {
+            width: 440px;
+        }
+        .facebook-iframe {
+            width: 380px;
+            height: 375px;
+        }
+    }
+
+  @media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 640px;
+    }
+    .facebook-iframe {
+        width: 500px;
+        height: 315px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }
+

@@ -15,7 +15,7 @@ const Partners = () => {
     return (
         <Box mb={24} mt={12}>
             <Heading mb={16} id="courses" fontSize='5xl'>С кем я работаю</Heading>
-            <Stack direction={["column", "row"]} spacing={12} justify="center" align="center">
+            <Stack direction={["column", null, "row"]} spacing={12} justify="center" align="center">
                 <Image src={KodixImg} htmlWidth="250" title="Место работы frontend-разработчиком"/>
                 <Image src={Specialist} title="Здесь преподаю в очном формате" />
                 <Image src={Gnivz} title="Корпоративное обучение"/>
