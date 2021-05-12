@@ -10,6 +10,8 @@ import { Hero } from '../Hero'
 import { Features } from '../Features'
 import { Courses } from '../Courses'
 import { Bio } from '../Bio'
+import { Reviews } from '../Reviews'
+import { Partners } from '../Partners'
 import { YouTubePromo } from '../YouTubePromo'
 import { Footer } from '../Footer'
 
@@ -28,6 +30,8 @@ export const App = () => (
         <Courses courses={courses} />
         <Bio text={bio} />
         <YouTubePromo list={youtubeList} />
+        <Reviews />
+        <Partners />
         <Footer />
       </Grid>
     </Box>
