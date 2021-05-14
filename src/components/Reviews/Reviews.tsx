@@ -17,11 +17,9 @@ function Reviews() {
                     spaceBetween={20}
                     slidesPerView={1}
                     navigation
-                    // updateOnWindowResize
                     centeredSlides={true}
                     centeredSlidesBounds={true}
                     loop={true}
-                // loopedSlides={3}
                 >
                     {
                         reviews.map((review) => (
@@ -29,7 +27,7 @@ function Reviews() {
                                 <iframe
                                     src={`https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpcgramota%2Fposts%2F${review}&width=500&show_text=true&appId=1762180570691962&height=315`}
                                     width="500"
-                                    height="315"
+                                    height="355"
                                     className="facebook-iframe"
                                     style={{
                                         border: 'none',
