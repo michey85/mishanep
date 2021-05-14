@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Box, Heading } from '@chakra-ui/react';
 import 'swiper/swiper-bundle.css';
 
-const reviews = ['2910022975983260', '2889852934666931', '2889337261385165'];
+const reviews = ['2911664792485745', '2910022975983260', '2889852934666931', '2889337261385165'];
 
 SwiperCore.use([Navigation]);
 
