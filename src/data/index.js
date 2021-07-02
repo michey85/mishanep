@@ -14,7 +14,7 @@ export const courses = [
             'React 17 от азов до создания полноценного SPA-приложения - с роутингом и продвинутым управлением состоянием.',
         tags: ['React', 'JavaScript', 'SPA'],
         link:
-            'https://www.udemy.com/course/react-from-scratch/?couponCode=568AE0641A88CD95607E',
+            'https://www.udemy.com/course/react-from-scratch/?couponCode=08802832DCA0C6993F2E',
         poster: ReactImg,
     },
     {
@@ -25,7 +25,7 @@ export const courses = [
             'Освойте множество крутых инструментов в одном курсе! Контроль версий, сборка и многое другое.',
         tags: ['NPM', 'Terminal', 'Git'],
         link:
-            'https://www.udemy.com/course/webtools/?couponCode=979989EC1B1C484FD037',
+            'https://www.udemy.com/course/webtools/?couponCode=3CF25B24AF7C183C0256',
         poster: WebToolsImg,
     },
     {
@@ -36,7 +36,7 @@ export const courses = [
             'Освойте необходимые технологии современной верстки сайтов и начните работать в сфере веб-разработки!',
         tags: ['HTML', 'CSS', 'JavaScript'],
         link:
-            'https://www.udemy.com/course/web-coder/?couponCode=1E490AA4AD93655324E7',
+            'https://www.udemy.com/course/web-coder/?couponCode=207DF7C49F3A87FF37F7',
         poster: WebCoderImg,
     },
     {
@@ -47,7 +47,7 @@ export const courses = [
             'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
         tags: ['LMS', 'CMS', 'Moodle'],
         link:
-            'https://www.udemy.com/course/moodle3-admin/?couponCode=28420444256F7F576EFD',
+            'https://www.udemy.com/course/moodle3-admin/?couponCode=36D2216588239FE1B05E',
         poster: MoodleImg,
     },
     {
@@ -58,7 +58,7 @@ export const courses = [
             'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
         tags: ['Pug', 'HTML', 'JavaScript'],
         link:
-            'https://www.udemy.com/course/pugjade-html/?couponCode=8D34B97E00CE07BBB81D',
+            'https://www.udemy.com/course/pugjade-html/?couponCode=AA2FE6CF79384960BD3A',
         poster: PugImg,
     },
     {
@@ -69,7 +69,7 @@ export const courses = [
             'Сделайте сайт себе - визитку, портфолио или небольшой магазин или получите профессию фринсера.',
         tags: ['CMS', 'WordPress'],
         link:
-            'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=D55FB0954668CEA05A0C',
+            'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=06BB76230429F6F2E525',
         poster: WPImg,
     },
 ];
