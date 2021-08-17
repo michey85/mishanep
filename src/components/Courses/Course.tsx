@@ -8,7 +8,6 @@ import {
     Stack,
     Button,
     Badge,
-    // useColorModeValue,
 } from '@chakra-ui/react';
 
 export interface CourseProps {
@@ -22,7 +21,7 @@ export interface CourseProps {
 }
 
 const Course: React.FC<CourseProps> = (props) => {
-    const { id, title, subtitle, description, tags, link, poster } = props;
+    const { title, subtitle, description, tags, link, poster } = props;
 
     return (
         <Center py={6}>
@@ -30,7 +29,6 @@ const Course: React.FC<CourseProps> = (props) => {
                 maxW={'320px'}
                 w={'full'}
                 bg="white"
-                // bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'2xl'}
                 rounded={'lg'}
                 p={6}
@@ -52,7 +50,6 @@ const Course: React.FC<CourseProps> = (props) => {
                 <Text
                     textAlign={'center'}
                     color="gray.700"
-                    // color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}>
                     {description}
                 </Text>
@@ -64,7 +61,6 @@ const Course: React.FC<CourseProps> = (props) => {
                             px={2}
                             py={1}
                             bg="gray.50"
-                            // bg={useColorModeValue('gray.50', 'gray.800')}
                             fontWeight={'400'}>
                             {tag}
                         </Badge>

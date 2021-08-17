@@ -1,3 +1,4 @@
+import JSImg from '../assets/js.jpg';
 import ReactImg from '../assets/react.png';
 import WebToolsImg from '../assets/webtools-cover-v1.png';
 import WebCoderImg from '../assets/webcoder-course-cover.jpg';
@@ -6,6 +7,15 @@ import PugImg from '../assets/pug-course-cover.jpg';
 import WPImg from '../assets/wordpress-course-cover.jpg';
 
 export const courses = [
+    {
+        id: 0,
+        title: "Фундаментальный JavaScript",
+        subtitle: "С практикой и проектами",
+        description: "Современный JavaScript с основ до продвинутых техник. Для начинающих и желающих закрыть пробелы.",
+        tags: ['JavaScript'],
+        link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=2A5C091D82E14E46A5C1',
+        poster: JSImg,
+    },
     {
         id: 1,
         title: 'React для начинающих',
@@ -33,23 +43,23 @@ export const courses = [
         title: 'Компетенция Верстальщик',
         subtitle: 'С нуля до верстки макетов',
         description:
-            'Освойте необходимые технологии современной верстки сайтов и начните работать в сфере веб-разработки!',
+            'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
         tags: ['HTML', 'CSS', 'JavaScript'],
         link:
             'https://www.udemy.com/course/web-coder/?couponCode=6B1C6CFD5950DA718AFB',
         poster: WebCoderImg,
     },
-    {
-        id: 4,
-        title: 'Moodle 3 для администраторов',
-        subtitle: 'Своя обучающая платформа',
-        description:
-            'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
-        tags: ['LMS', 'CMS', 'Moodle'],
-        link:
-            'https://www.udemy.com/course/moodle3-admin/?couponCode=DD0F3B70AE2183632C8D',
-        poster: MoodleImg,
-    },
+    // {
+    //     id: 4,
+    //     title: 'Moodle 3 для администраторов',
+    //     subtitle: 'Своя обучающая платформа',
+    //     description:
+    //         'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
+    //     tags: ['LMS', 'CMS', 'Moodle'],
+    //     link:
+    //         'https://www.udemy.com/course/moodle3-admin/?couponCode=DD0F3B70AE2183632C8D',
+    //     poster: MoodleImg,
+    // },
     {
         id: 5,
         title: 'Шаблонизатор Pug',
