@@ -45,6 +45,6 @@
         ]
     },
     "devDependencies": {
-        "vercel": "^22.0.1"
+        "vercel": "^23.1.2"
     }
 }
