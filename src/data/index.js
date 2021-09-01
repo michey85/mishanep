@@ -13,7 +13,7 @@ export const courses = [
         subtitle: "С практикой и проектами",
         description: "Современный JavaScript с основ до продвинутых техник. Для начинающих и желающих закрыть пробелы.",
         tags: ['JavaScript'],
-        link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=2A5C091D82E14E46A5C1',
+        link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=3F560758990AFE81C539',
         poster: JSImg,
     },
     {
@@ -23,8 +23,7 @@ export const courses = [
         description:
             'React 17 от азов до создания полноценного SPA-приложения - с роутингом и продвинутым управлением состоянием.',
         tags: ['React', 'JavaScript', 'SPA'],
-        link:
-            'https://www.udemy.com/course/react-from-scratch/?couponCode=DA135D12012D2AA288E4',
+        link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=FBC53947AEF5227BBDA1',
         poster: ReactImg,
     },
     {
@@ -45,8 +44,7 @@ export const courses = [
         description:
             'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
         tags: ['HTML', 'CSS', 'JavaScript'],
-        link:
-            'https://www.udemy.com/course/web-coder/?couponCode=6B1C6CFD5950DA718AFB',
+        link: 'https://www.udemy.com/course/web-coder/?couponCode=D184AF48B412516BF5A0',
         poster: WebCoderImg,
     },
     // {
@@ -67,8 +65,7 @@ export const courses = [
         description:
             'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
         tags: ['Pug', 'HTML', 'JavaScript'],
-        link:
-            'https://www.udemy.com/course/pugjade-html/?couponCode=F5717F90095DCB903B22',
+        link: 'https://www.udemy.com/course/pugjade-html/?couponCode=8626A642C46483BB7880',
         poster: PugImg,
     },
     {
@@ -78,8 +75,7 @@ export const courses = [
         description:
             'Сделайте сайт себе - визитку, портфолио или небольшой магазин или получите профессию фринсера.',
         tags: ['CMS', 'WordPress'],
-        link:
-            'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=961B93FBCA2F23DC1D9F',
+        link: 'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=8EDD0DB4667CDF0A42F6',
         poster: WPImg,
     },
 ];
