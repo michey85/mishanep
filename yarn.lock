@@ -2680,17 +2680,17 @@
 
 "@vercel/build-utils@2.12.2":
   version "2.12.2"
-  resolved "https://npm.kodixauto.ru/@vercel%2fbuild-utils/-/build-utils-2.12.2.tgz#285a3bb0b78864fb6f44478257bd275c57aa8651"
+  resolved "https://registry.yarnpkg.com/@vercel%2fbuild-utils/-/build-utils-2.12.2.tgz#285a3bb0b78864fb6f44478257bd275c57aa8651"
   integrity sha512-KbSgG2ZCVXhUsdbnpv6gC7buygd31jaKiKhrd4Lzv1NwjnoeDZAXlm4hzvSPYHVtCY2jirKJWP2rFtMW8iAh9g==
 
 "@vercel/go@1.2.3":
   version "1.2.3"
-  resolved "https://npm.kodixauto.ru/@vercel%2fgo/-/go-1.2.3.tgz#6f2bdba5681f9d64ee17060c5d63589e2d45e2d8"
+  resolved "https://registry.yarnpkg.com/@vercel%2fgo/-/go-1.2.3.tgz#6f2bdba5681f9d64ee17060c5d63589e2d45e2d8"
   integrity sha512-BZCHRz43Qfr0DwZlZQCcofR+3cr+H+HK72/ZPkZy1Uq0NYjJMlmZ3ahuMgvJxT9lfC1RA6eOEUlUsZ+gqKcMCg==
 
 "@vercel/node@1.12.1":
   version "1.12.1"
-  resolved "https://npm.kodixauto.ru/@vercel%2fnode/-/node-1.12.1.tgz#15f42f64690f904f8a52a387123ce0958657060f"
+  resolved "https://registry.yarnpkg.com/@vercel%2fnode/-/node-1.12.1.tgz#15f42f64690f904f8a52a387123ce0958657060f"
   integrity sha512-NcawIY05BvVkWlsowaxF2hl/hJg475U8JvT2FnGykFPMx31q1/FtqyTw/awSrKfOSRXR0InrbEIDIelmS9NzPA==
   dependencies:
     "@types/node" "*"
@@ -2699,12 +2699,12 @@
 
 "@vercel/python@2.0.5":
   version "2.0.5"
-  resolved "https://npm.kodixauto.ru/@vercel%2fpython/-/python-2.0.5.tgz#76c09280febfac863c39651edffafbb0838a1df8"
+  resolved "https://registry.yarnpkg.com/@vercel%2fpython/-/python-2.0.5.tgz#76c09280febfac863c39651edffafbb0838a1df8"
   integrity sha512-WCSTTw6He2COaSBiGDk2q5Q1ue+z5usRZcvUHCpsK6KvNkkV/PrY8JT73XQysMWKiXh6yQy19IUFAOqK/xwhig==
 
 "@vercel/ruby@1.2.7":
   version "1.2.7"
-  resolved "https://npm.kodixauto.ru/@vercel%2fruby/-/ruby-1.2.7.tgz#516d1c45f4961619338f3d3bb518ee43b863a5da"
+  resolved "https://registry.yarnpkg.com/@vercel%2fruby/-/ruby-1.2.7.tgz#516d1c45f4961619338f3d3bb518ee43b863a5da"
   integrity sha512-ZG2VxMHHSKocL57UWsfNc9UsblwYGm55/ujqGIBnkNUURnRgtUrwtWlEts1eJ4VHD754Lc/0/R1pfJXoN5SbRw==
 
 "@webassemblyjs/ast@1.9.0":
@@ -11956,7 +11956,7 @@ typedarray@^0.0.6:
 
 typescript@4.3.4:
   version "4.3.4"
-  resolved "https://npm.kodixauto.ru/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
   integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
 
 typescript@^3.9.5:
@@ -12240,7 +12240,7 @@ vendors@^1.0.0:
 
 vercel@^23.1.2:
   version "23.1.2"
-  resolved "https://npm.kodixauto.ru/vercel/-/vercel-23.1.2.tgz#7f36772970c7c56f10de89983f03b3c0c72d294e"
+  resolved "https://registry.yarnpkg.com/vercel/-/vercel-23.1.2.tgz#7f36772970c7c56f10de89983f03b3c0c72d294e"
   integrity sha512-uS1k7wuXI6hbxiW+kn9vdAWL0bBi4jjVxc7Jwp8NhJjcRuzlydtt3gUEnhnC9AOIKQ4LxoAgmg50lSyYkrC8Hg==
   dependencies:
     "@vercel/build-utils" "2.12.2"
