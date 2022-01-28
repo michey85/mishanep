@@ -1,22 +1,51 @@
 import * as React from "react"
+import { Variants } from 'framer-motion';
 import {
-    Button,
     Flex,
-    Heading,
-    Image,
     Stack,
     Text,
     useBreakpointValue,
 } from '@chakra-ui/react';
+import {
+    MButton,
+    MStack,
+    MText,
+    MHeading,
+    MImage,
+} from '../../UI';
 
-import Img from '../../assets/hero.jpg'
+import Img from '../../assets/hero.jpg';
+
+
+const container: Variants = {
+    hidden: { opacity: 0, y: 100 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+        staggerChildren: 0.5,
+        }
+    }
+}
+  
+const item: Variants = {
+    hidden: { opacity: 0, y: 100 },
+    show: { opacity: 1, y: 0 }
+}
 
 function Hero() {
     return (
         <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
-                <Stack spacing={6} w={'full'} maxW={'lg'}>
-                    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <MStack
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                    spacing={6}
+                    w={'full'} 
+                    maxW={'lg'}
+                >
+                    <MHeading variants={item} fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                         <Text
                             as={'span'}
                             position={'relative'}
@@ -36,12 +65,13 @@ function Hero() {
                         <Text color={'blue.400'} as={'span'}>
                             Обучение веб-разработке
                         </Text>{' '}
-                    </Heading>
-                    <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+                    </MHeading>
+                    <MText variants={item} fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
                         Научитесь создавать сайты разного уровня сложности. От работы с WordPress до полноценной frontend-разработки.
-                    </Text>
-                    <Stack direction={{ base: 'column', md: 'row' }} spacing={4} justifyContent='center'>
-                        <Button
+                    </MText>
+                    <MStack variants={item} direction={{ base: 'column', md: 'row' }} spacing={4} justifyContent='center'>
+                        <MButton
+                            whileTap={{ scale: 0.9 }}
                             as="a"
                             href="#courses"
                             rounded={'full'}
@@ -51,13 +81,29 @@ function Hero() {
                                 bg: 'blue.500',
                             }}>
                             Смотреть курсы
-                        </Button>
-                        <Button as="a" href="#bio" rounded={'full'}>О преподавателе</Button>
-                    </Stack>
-                </Stack>
+                        </MButton>
+                        <MButton
+                            whileTap={{ scale: 0.9 }}
+                            as="a"
+                            href="#bio"
+                            rounded={'full'}
+                        >
+                            О преподавателе
+                        </MButton>
+                    </MStack>
+                </MStack>
             </Flex>
             <Flex flex={1}>
-                <Image
+                <MImage
+                    initial={{
+                        filter: 'blur(100px)',
+                        opacity: 0,
+                    }}
+                    animate={{
+                        filter: 'blur(0px)',
+                        opacity: 1,
+                        transition: {duration: 2}
+                    }}
                     alt={'Login Image'}
                     objectFit={'cover'}
                     src={Img}

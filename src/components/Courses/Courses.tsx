@@ -1,25 +1,61 @@
 import * as React from 'react'
-import { Box, SimpleGrid, Heading } from '@chakra-ui/react';
+import { motion, Variants } from 'framer-motion';
 
 import { Course, CourseProps } from './Course';
+
+import {
+    MHeading,
+    MBox,
+    MSimpleGrid,
+} from '../../UI';
 
 interface ICourses {
     courses: CourseProps[];
 }
 
+const titleAnimation: Variants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    }
+  }
+
+const coursesAnimation: Variants = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: (custom: number) => ({
+        opacity: 1,
+        transition: { delay: custom * 0.4 }
+    }),
+}
+
 const Courses: React.FC<ICourses> = (props) => {
     const { courses } = props;
     return (
-        <Box p={4} maxW="container.xl" mx='auto' mt="12">
-            <Heading mb={8} id="courses" fontSize='5xl'>Видео курсы</Heading>
-            <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+        <MBox
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            p={4}
+            maxW="container.xl"
+            mx='auto'
+            mt="12"
+        >
+            <MHeading variants={titleAnimation} mb={8} id="courses" fontSize='5xl'>
+                Видео курсы
+            </MHeading>
+            <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
                 {
-                    courses.map((course) => (
-                        <Course key={course.id} {...course} />
+                    courses.map((course, index) => (
+                        <motion.div key={course.id} custom={index + 1} variants={coursesAnimation}>
+                            <Course {...course} />
+                        </motion.div>
                     ))
                 }
-            </SimpleGrid>
-        </Box>
+            </MSimpleGrid>
+        </MBox>
     )
 }
 

@@ -1,12 +1,15 @@
 import * as React from 'react';
+import {Flex, Stack, Text} from '@chakra-ui/react';
+import {Variants} from 'framer-motion';
+
 import {
-    Button,
-    Flex,
-    Heading,
-    Image,
-    Stack,
-    Text,
-} from '@chakra-ui/react';
+    MButton,
+    MFlex,
+    MStack,
+    MText,
+    MHeading,
+    MImage,
+} from '../../UI';
 
 import Img from '../../assets/bio.jpg';
 
@@ -14,23 +17,48 @@ interface BioProps {
     text: string;
 }
 
+const imageAnimation: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+    }
+  }
+
+const bioAnimation: Variants = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: (custom: number) => ({
+        opacity: 1,
+        transition: { delay: custom * 0.4 }
+    }),
+}
+
 const Bio: React.FC<BioProps> = (props) => {
     const { text } = props;
 
     return (
-        <Flex id="bio" direction={{ base: 'column-reverse', md: 'row' }} bg='gray.50'>
+        <MFlex 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            id="bio"
+            direction={{ base: 'column-reverse', md: 'row' }}
+            bg='gray.50'
+        >
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={6} w={'full'} maxW={'lg'}>
-                    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                    <MHeading custom={1} variants={bioAnimation} fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                         <Text color={'blue.400'} as={'span'}>
                             Михаил Непомнящий
                         </Text>
-                    </Heading>
-                    <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
+                    </MHeading>
+                    <MText custom={2} variants={bioAnimation} fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
                         {text}
-                    </Text>
-                    <Stack direction={{ base: 'column', md: 'row' }} spacing={4} justifyContent='center'>
-                        <Button
+                    </MText>
+                    <MStack custom={3} variants={bioAnimation} direction={{ base: 'column', md: 'row' }} spacing={4} justifyContent='center'>
+                        <MButton
+                            whileTap={{ scale: 0.9 }}
                             as="a"
                             href="https://www.youtube.com/channel/UCFq12kPZg4wTNPO7V_g3B-A"
                             target="_blank"
@@ -39,20 +67,22 @@ const Bio: React.FC<BioProps> = (props) => {
                             color={'white'}
                             _hover={{
                                 bg: 'blue.500',
-                            }}>
+                            }}
+                        >
                             Смотреть YouTube
-                        </Button>
-                    </Stack>
+                        </MButton>
+                    </MStack>
                 </Stack>
             </Flex>
             <Flex flex={1} mb={0}>
-                <Image
+                <MImage
+                    variants={imageAnimation}
                     alt={'Login Image'}
                     objectFit={'cover'}
                     src={Img}
                 />
             </Flex>
-        </Flex>
+        </MFlex>
     )
 }
 
