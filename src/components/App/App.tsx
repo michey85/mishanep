@@ -5,7 +5,7 @@ import {
   Grid,
   theme,
 } from "@chakra-ui/react"
-// import { ColorModeSwitcher } from "../../ColorModeSwitcher"
+
 import { Hero } from '../Hero'
 import { Features } from '../Features'
 import { Courses } from '../Courses'
@@ -22,9 +22,7 @@ export const App = () => (
     <Box textAlign="center" fontSize="xl">
       <Grid
         minH="100vh"
-      // p={3}
       >
-        {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
         <Hero />
         <Features />
         <Courses courses={courses} />

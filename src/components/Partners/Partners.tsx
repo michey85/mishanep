@@ -1,13 +1,6 @@
 import * as React from 'react';
-import {
-    Button,
-    Flex,
-    Heading,
-    Image,
-    Stack,
-    Box,
-} from '@chakra-ui/react';
-import { motion, Variants } from 'framer-motion';
+import {Stack} from '@chakra-ui/react';
+import {Variants} from 'framer-motion';
 
 import {
     MHeading,
@@ -15,7 +8,6 @@ import {
     MImage,
 } from '../../UI';
 
-import KodixImg from '../../assets/kodix.svg';
 import Epam from '../../assets/epam.png'
 import Specialist from '../../assets/specialist.png';
 import Gnivz from '../../assets/gnivz.png';

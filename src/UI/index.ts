@@ -1,6 +1,6 @@
 import {
     Box, BoxProps,
-    Button, ButtonProps,
+    Button,
     Stack, StackProps,
     Flex, FlexProps,
     Text, TextProps,
