@@ -37,7 +37,7 @@ const Courses: React.FC<ICourses> = (props) => {
         <MBox
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
             p={4}
             maxW="container.xl"
             mx='auto'
