@@ -13,7 +13,7 @@ export const courses = [
         subtitle: "С практикой и проектами",
         description: "Современный JavaScript с основ до продвинутых техник. Для начинающих и желающих закрыть пробелы.",
         tags: ['JavaScript'],
-        link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=3E597C72286EB527E235',
+        link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=E808CD3EE710E759FCCB',
         poster: JSImg,
     },
     {
@@ -22,7 +22,7 @@ export const courses = [
         subtitle: '+3 проекта в портфолио',
         description: 'React 17 от азов до создания полноценного SPA-приложения - с роутингом и продвинутым управлением состоянием.',
         tags: ['React', 'JavaScript', 'SPA'],
-        link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=5C957578EA4566B481FB',
+        link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=CF622E2C99D5D79CA626',
         poster: ReactImg,
     },
     {
@@ -31,7 +31,7 @@ export const courses = [
         subtitle: 'Git, SSH, Webpack и другие',
         description: 'Освойте множество крутых инструментов в одном курсе! Контроль версий, сборка и многое другое.',
         tags: ['NPM', 'Terminal', 'Git'],
-        link: 'https://www.udemy.com/course/webtools/?couponCode=FACF1D12AC2B9E1CABFA',
+        link: 'https://www.udemy.com/course/webtools/?couponCode=C763B2CF06C2381BCFE2',
         poster: WebToolsImg,
     },
     {
@@ -40,7 +40,7 @@ export const courses = [
         subtitle: 'С нуля до верстки макетов',
         description: 'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
         tags: ['HTML', 'CSS', 'JavaScript'],
-        link: 'https://www.udemy.com/course/web-coder/?couponCode=0157AF077552E624819A',
+        link: 'https://www.udemy.com/course/web-coder/?couponCode=D636E0545330C082C91D',
         poster: WebCoderImg,
     },
     // {
@@ -60,7 +60,7 @@ export const courses = [
         subtitle: 'Ускорь свою верстку в несколько раз',
         description: 'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
         tags: ['Pug', 'HTML', 'JavaScript'],
-        link: 'https://www.udemy.com/course/pugjade-html/?couponCode=0A88BBB245AE1AE93284',
+        link: 'https://www.udemy.com/course/pugjade-html/?couponCode=67D127F8ABCD86487C93',
         poster: PugImg,
     },
     {
@@ -69,7 +69,7 @@ export const courses = [
         subtitle: 'Сайты на WordPress - от простых до сложных',
         description: 'Сделайте сайт себе - визитку, портфолио или небольшой магазин или получите профессию фринсера.',
         tags: ['CMS', 'WordPress'],
-        link: 'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=4290E92A6103F335947C',
+        link: 'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=B5FB521D0D1B1D02AC39',
         poster: WPImg,
     },
 ];
