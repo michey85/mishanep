@@ -1,37 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
-.swiper-container {
-    width: 320px;
-  }
-.facebook-iframe {
-    width: 250px;
-    height: 580px;
+.next,
+.prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: var(--chakra-colors-blue-400);
+  color: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
 }
 
-    @media screen and (min-width: 440px) {
-        .swiper-container {
-            width: 440px;
-        }
-        .facebook-iframe {
-            width: 380px;
-            height: 420px;
-        }
-    }
+.next {
+  right: 10px;
+}
 
-  @media screen and (min-width: 640px) {
+.prev {
+  left: 10px;
+  transform: scale(-1);
+}
+
+.swiper-container {
+  width: 320px;
+}
+.facebook-iframe {
+  width: 250px;
+  height: 100px;
+}
+.facebook-iframe body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 440px) {
     .swiper-container {
-      width: 640px;
+        width: 440px;
     }
     .facebook-iframe {
-        width: 500px;
-        height: 335px;
+        width: 380px;
+        height: 420px;
     }
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
   }
-  
-  @media screen and (min-width: 768px) {
-    .swiper-container {
-      width: 768px;
-    }
+  .facebook-iframe {
+      width: 500px;
+      height: 335px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
 

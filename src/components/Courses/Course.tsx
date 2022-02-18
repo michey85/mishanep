@@ -37,7 +37,7 @@ const Course: React.FC<CourseProps> = (props) => {
                 <Avatar
                     size={'xl'}
                     src={poster}
-                    alt={title + ' ' + subtitle}
+                    name={title + ' ' + subtitle}
                     mb={4}
                     pos={'relative'}
                 />
