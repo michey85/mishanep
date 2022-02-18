@@ -5,70 +5,15 @@
 html {
   scroll-behavior: smooth;
 }
-.next,
-.prev {
-  top: calc(50% - 20px);
-  position: absolute;
-  background: var(--chakra-colors-blue-400);
-  color: white;
-  border-radius: 30px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
-  z-index: 2;
-}
 
-.next {
-  right: 10px;
-}
-
-.prev {
-  left: 10px;
-  transform: scale(-1);
-}
-
-.swiper-container {
-  width: 320px;
-}
 .facebook-iframe {
   width: 250px;
-  height: 100px;
-}
-.facebook-iframe body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: 440px) {
-    .swiper-container {
-        width: 440px;
-    }
-    .facebook-iframe {
-        width: 380px;
-        height: 420px;
-    }
+  height: 450px;
 }
 
 @media screen and (min-width: 640px) {
-  .swiper-container {
-    width: 640px;
-  }
   .facebook-iframe {
       width: 500px;
-      height: 335px;
+      height: 350px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .swiper-container {
-    width: 768px;
-  }
-}
-
