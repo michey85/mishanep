@@ -18,10 +18,11 @@ export interface CourseProps {
     tags: string[];
     link: string;
     poster: string;
+    stepik?: string;
 }
 
 const Course: React.FC<CourseProps> = (props) => {
-    const { title, subtitle, description, tags, link, poster } = props;
+    const { title, subtitle, description, tags, link, poster, stepik } = props;
 
     return (
         <Center py={6}>
@@ -85,8 +86,30 @@ const Course: React.FC<CourseProps> = (props) => {
                         _focus={{
                             bg: 'blue.500',
                         }}>
-                        Подробнее
+                        На Udemy
                     </Button>
+                    {stepik && (
+                        <Button
+                            flex={1}
+                            as="a"
+                            href={link}
+                            fontSize={'sm'}
+                            rounded={'full'}
+                            bg={'blue.600'}
+                            color={'white'}
+                            boxShadow={
+                                '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+                            }
+                            _hover={{
+                                bg: 'blue.500',
+                            }}
+                            _focus={{
+                                bg: 'blue.500',
+                            }}
+                        >
+                          На Stepik
+                        </Button>
+                    )}
                 </Stack>
             </Box>
         </Center>
