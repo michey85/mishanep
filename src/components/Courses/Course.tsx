@@ -92,7 +92,7 @@ const Course: React.FC<CourseProps> = (props) => {
                         <Button
                             flex={1}
                             as="a"
-                            href={link}
+                            href={stepik}
                             fontSize={'sm'}
                             rounded={'full'}
                             bg={'blue.600'}
