@@ -8,24 +8,24 @@ interface FeatureProps {
 }
 
 const Feature: React.FC<FeatureProps> = ({ title, text, icon }) => {
-    return (
-        <Stack>
-            <Flex
-                w={16}
-                h={16}
-                align={'center'}
-                alignSelf='center'
-                justify={'center'}
-                color={'white'}
-                rounded={'full'}
-                bg={'gray.100'}
-                mb={1}>
-                {icon}
-            </Flex>
-            <Text fontWeight={600} fontSize={'4xl'}>{title}</Text>
-            <Text color={'gray.600'}>{text}</Text>
-        </Stack>
-    );
+  return (
+    <Stack>
+      <Flex
+        w={16}
+        h={16}
+        align={'center'}
+        alignSelf="center"
+        justify={'center'}
+        color={'white'}
+        rounded={'full'}
+        bg={'gray.100'}
+        mb={1}>
+        {icon}
+      </Flex>
+      <Text fontWeight={600} fontSize={'4xl'}>{title}</Text>
+      <Text color={'gray.600'}>{text}</Text>
+    </Stack>
+  );
 };
 
-export { Feature }
+export { Feature };

@@ -1,19 +1,19 @@
-import * as React from "react"
+import * as React from 'react';
 import {
   ChakraProvider,
   Box,
   Grid,
   theme,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react';
 
-import { Hero } from '../Hero'
-import { Features } from '../Features'
-import { Courses } from '../Courses'
-import { Bio } from '../Bio'
-import { Reviews } from '../Reviews'
-import { Partners } from '../Partners'
-import { YouTubePromo } from '../YouTubePromo'
-import { Footer } from '../Footer'
+import { Hero } from '../Hero';
+import { Features } from '../Features';
+import { Courses } from '../Courses';
+import { Bio } from '../Bio';
+import { Reviews } from '../Reviews';
+import { Partners } from '../Partners';
+import { YouTubePromo } from '../YouTubePromo';
+import { Footer } from '../Footer';
 
 import { courses, bio, youtubeList } from '../../data';
 
@@ -34,4 +34,4 @@ export const App = () => (
       </Grid>
     </Box>
   </ChakraProvider>
-)
+);

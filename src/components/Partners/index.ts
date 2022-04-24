@@ -1,1 +1,1 @@
-export {Partners} from './Partners'
+export {Partners} from './Partners';

@@ -1,13 +1,13 @@
 import {
-    Alert, AlertProps,
-    Box, BoxProps,
-    Button,
-    Stack, StackProps,
-    Flex, FlexProps,
-    Text, TextProps,
-    Heading, HeadingProps,
-    Image, ImageProps,
-    SimpleGrid, SimpleGridProps,
+  Alert, AlertProps,
+  Box, BoxProps,
+  Button,
+  Stack, StackProps,
+  Flex, FlexProps,
+  Text, TextProps,
+  Heading, HeadingProps,
+  Image, ImageProps,
+  SimpleGrid, SimpleGridProps,
 } from '@chakra-ui/react';
 import {motion} from 'framer-motion';
 
