@@ -1,4 +1,5 @@
 import {
+    Alert, AlertProps,
     Box, BoxProps,
     Button,
     Stack, StackProps,
@@ -10,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import {motion} from 'framer-motion';
 
+export const MAlert = motion<AlertProps>(Alert);
 export const MBox = motion<BoxProps>(Box);
 export const MButton = motion(Button);
 export const MStack = motion<StackProps>(Stack);

@@ -1,9 +1,11 @@
 import * as React from 'react'
 import { motion, Variants } from 'framer-motion';
+import { AlertIcon } from '@chakra-ui/react';
 
 import { Course, CourseProps } from './Course';
 
 import {
+    MAlert,
     MHeading,
     MBox,
     MSimpleGrid,
@@ -20,6 +22,14 @@ const titleAnimation: Variants = {
       y: 0,
     }
   }
+const alertAnimation: Variants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { delay: 1 },
+    },
+}
 
 const coursesAnimation: Variants = {
     hidden: {
@@ -46,6 +56,10 @@ const Courses: React.FC<ICourses> = (props) => {
             <MHeading variants={titleAnimation} mb={8} id="courses" fontSize='5xl'>
                 Видео курсы
             </MHeading>
+            <MAlert status='info' variants={alertAnimation} mb={8}>
+                <AlertIcon />
+                На Stepik.org до конца мая на все курсы действует промокод - SPRING22.
+            </MAlert>
             <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
                 {
                     courses.map((course, index) => (
