@@ -76,6 +76,7 @@ export const courses = [
     description: 'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
     tags: ['Pug', 'HTML', 'JavaScript'],
     link: 'https://www.udemy.com/course/pugjade-html/?couponCode=A4AA93816F2E202DEDD5',
+    stepik: 'https://stepik.org/z/120077',
     poster: PugImg,
   },
   // {
