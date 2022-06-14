@@ -56,6 +56,7 @@ export const courses = [
     description: 'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
     tags: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://www.udemy.com/course/web-coder/?couponCode=1F0FAB2BF14649855A22',
+    stepik: 'https://stepik.org/z/120081',
     poster: WebCoderImg,
   },
   // {
