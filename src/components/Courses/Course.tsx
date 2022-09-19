@@ -48,12 +48,12 @@ const Course: React.FC<CourseProps> = (props) => {
         <Text fontWeight={600} color={'gray.500'} mb={4}>
           {subtitle}
         </Text>
-        <Text
+        {/* <Text
           textAlign={'center'}
           color="gray.700"
           px={3}>
           {description}
-        </Text>
+        </Text> */}
 
         <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
           {tags.map((tag, index) => (

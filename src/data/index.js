@@ -3,10 +3,11 @@ import JSImg from '../assets/js.jpg';
 import ReactImg from '../assets/react.png';
 import WebToolsImg from '../assets/webtools-cover-v1.png';
 import WebCoderImg from '../assets/webcoder-course-cover.jpg';
-// import MoodleImg from '../assets/moodle-course-cover.jpg';
+import MoodleImg from '../assets/moodle-course-cover.jpg';
 import PugImg from '../assets/pug-course-cover.jpg';
-// import WPImg from '../assets/wordpress-course-cover.jpg';
+import WPImg from '../assets/wordpress-course-cover.jpg';
 import RRImg from '../assets/redux-course.jpg';
+import TSImg from '../assets/ts.png';
 
 export const courses = [
   {
@@ -30,7 +31,7 @@ export const courses = [
     poster: ReactImg,
   },
   {
-    id: 4,
+    id: 2,
     title: 'Redux для управления состоянием',
     subtitle: '+2 проекта на React+Redux',
     description: 'Освойте принципы работы Redux - на классическом и современном вариантах использования.',
@@ -40,7 +41,17 @@ export const courses = [
     poster: RRImg,
   },
   {
-    id: 2,
+    id: 3,
+    title: 'TypeScript для разработки',
+    subtitle: 'Добавьте строгости коду',
+    description: 'От базовых типов до создания серьезных приложений на современном стеке.',
+    tags: ['TypeScript', 'Redux', 'React'],
+    link: 'https://www.udemy.com/course/modern-typescript/?couponCode=FD60716D3FD44DFCF447',
+    stepik: 'https://stepik.org/a/121859',
+    poster: TSImg,
+  },
+  {
+    id: 4,
     title: 'Инструменты разработчика',
     subtitle: 'Git, SSH, Webpack и другие',
     description: 'Освойте множество крутых инструментов в одном курсе! Контроль версий, сборка, терминал, лайфхаки и многое другое.',
@@ -50,7 +61,7 @@ export const courses = [
     poster: WebToolsImg,
   },
   {
-    id: 3,
+    id: 5,
     title: 'Компетенция Верстальщик',
     subtitle: 'С нуля до верстки макетов',
     description: 'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
@@ -59,20 +70,9 @@ export const courses = [
     stepik: 'https://stepik.org/z/120081',
     poster: WebCoderImg,
   },
-  // {
-  //     id: 4,
-  //     title: 'Moodle 3 для администраторов',
-  //     subtitle: 'Своя обучающая платформа',
-  //     description:
-  //         'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
-  //     tags: ['LMS', 'CMS', 'Moodle'],
-  //     link:
-  //         'https://www.udemy.com/course/moodle3-admin/?couponCode=DD0F3B70AE2183632C8D',
-  //     poster: MoodleImg,
-  // },
   {
-    id: 5,
-    title: 'Шаблонизатор Pug',
+    id: 6,
+    title: 'Шаблонизатор Pug (jade)',
     subtitle: 'Ускорь свою верстку в несколько раз',
     description: 'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
     tags: ['Pug', 'HTML', 'JavaScript'],
@@ -80,15 +80,26 @@ export const courses = [
     stepik: 'https://stepik.org/z/120077',
     poster: PugImg,
   },
-  // {
-  //     id: 6,
-  //     title: 'Создание сайтов без программирования',
-  //     subtitle: 'Сайты на WordPress - от простых до сложных',
-  //     description: 'Сделайте сайт себе - визитку, портфолио или небольшой магазин или получите профессию фринсера.',
-  //     tags: ['CMS', 'WordPress'],
-  //     link: 'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=B5FB521D0D1B1D02AC39',
-  //     poster: WPImg,
-  // },
+  {
+      id: 7,
+      title: 'Moodle 3 для администраторов',
+      subtitle: 'Своя обучающая платформа',
+      description:
+          'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
+      tags: ['LMS', 'CMS', 'Moodle'],
+      link:
+          'https://www.udemy.com/course/moodle3-admin/?couponCode=DD0F3B70AE2183632C8D',
+      poster: MoodleImg,
+  },
+  {
+      id: 8,
+      title: 'Создание сайтов без программирования',
+      subtitle: 'Сайты на WordPress - от простых до сложных',
+      description: 'Сделайте сайт себе - визитку, портфолио или небольшой магазин или получите профессию фринсера.',
+      tags: ['CMS', 'WordPress'],
+      link: 'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=B5FB521D0D1B1D02AC39',
+      poster: WPImg,
+  },
 ];
 
 export const bio = `Действующий веб-разработчик и опытный преподаватель. Веду направления по созданию сайтов: от самых основ до профессий веб-мастера, верстальщика и frontend-разработчика.
