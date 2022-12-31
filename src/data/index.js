@@ -5,7 +5,6 @@ import WebToolsImg from '../assets/webtools-cover-v1.png';
 import WebCoderImg from '../assets/webcoder-course-cover.jpg';
 import MoodleImg from '../assets/moodle-course-cover.jpg';
 import PugImg from '../assets/pug-course-cover.jpg';
-import WPImg from '../assets/wordpress-course-cover.jpg';
 import RRImg from '../assets/redux-course.jpg';
 import TSImg from '../assets/ts.png';
 
@@ -89,15 +88,6 @@ export const courses = [
     tags: ['LMS', 'CMS', 'Moodle'],
     link: 'https://www.udemy.com/course/moodle3-admin/?couponCode=B256D712A3E5BA4EB34F',
     poster: MoodleImg,
-  },
-  {
-    id: 8,
-    title: 'Создание сайтов без программирования',
-    subtitle: 'Сайты на WordPress - от простых до сложных',
-    description: 'Сделайте сайт себе - визитку, портфолио или небольшой магазин или получите профессию фринсера.',
-    tags: ['CMS', 'WordPress'],
-    link: 'https://www.udemy.com/course/wordpress-pcgramota/?couponCode=AB75A893FC7ACAFB4FA2',
-    poster: WPImg,
   },
 ];
 
