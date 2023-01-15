@@ -32,7 +32,7 @@ const ConsultFAQ = () => {
           <Text>
             Я предлагаю <strong>получасовые</strong> консультации для всех желающих. Вопросы по учебе, трудоустройству, развитию в профессии.
           </Text>
-          <Accordion defaultIndex={[0]} mt={4}>
+          <Accordion mt={4}>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -86,6 +86,20 @@ const ConsultFAQ = () => {
               </h2>
               <AccordionPanel pb={4}>
                   30 минутная консультации стоит <strong>2000 рублей</strong> при оплате на российскую карту или <strong>25 евро</strong> при переводе на европейскую карту или PayPal.
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box as="span" flex='1' textAlign='left'>
+                    Как заказать консультацию
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                  Пришлите письмо с запросом на консультацию на почту <strong><a href="mailto:pcgramota@gmail.com">pcgramota@gmail.com</a></strong> с указанием желаемого времени и приблизительным набором тем для обсуждения.
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
