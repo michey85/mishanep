@@ -2,14 +2,12 @@ import * as React from 'react';
 import { Box, Icon } from '@chakra-ui/react';
 import { FcAssistant, FcIdea, FcVideoFile } from 'react-icons/fc';
 import { motion, Variants } from 'framer-motion';
-
-
 import {
   MHeading,
   MBox,
   MSimpleGrid,
 } from '../../UI';
-
+import { ConsultFAQ } from '../ConsultFAQ';
 import { Feature } from './Feature';
 
 
@@ -50,6 +48,7 @@ const Features: React.FC = () => {
               text={
                 'Для начинающих и практикующих разработчиков, а также для владельцев сайтов.'
               }
+              more={<ConsultFAQ />}
             />
           </motion.div>
           <motion.div custom={2} variants={featuresAnimation}>

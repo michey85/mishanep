@@ -1,0 +1,1 @@
+export { ConsultFAQ } from './ConsultFAQ'

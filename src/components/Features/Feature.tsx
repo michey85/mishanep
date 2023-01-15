@@ -5,9 +5,10 @@ interface FeatureProps {
     title: string;
     text: string;
     icon: React.ReactElement;
+    more?: React.ReactNode;
 }
 
-const Feature: React.FC<FeatureProps> = ({ title, text, icon }) => {
+const Feature: React.FC<FeatureProps> = ({ title, text, icon, more }) => {
   return (
     <Stack>
       <Flex
@@ -24,6 +25,7 @@ const Feature: React.FC<FeatureProps> = ({ title, text, icon }) => {
       </Flex>
       <Text fontWeight={600} fontSize={'4xl'}>{title}</Text>
       <Text color={'gray.600'}>{text}</Text>
+      {more}
     </Stack>
   );
 };
