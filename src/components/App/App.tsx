@@ -10,8 +10,6 @@ import { Hero } from '../Hero';
 import { Features } from '../Features';
 import { Courses } from '../Courses';
 import { Bio } from '../Bio';
-// import { Reviews } from '../Reviews';
-import { Partners } from '../Partners';
 import { YouTubePromo } from '../YouTubePromo';
 import { Footer } from '../Footer';
 
@@ -20,16 +18,12 @@ import { courses, bio, youtubeList } from '../../data';
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
-      <Grid
-        minH="100vh"
-      >
+      <Grid minH="100vh">
         <Hero />
         <Features />
         <Courses courses={courses} />
         <Bio text={bio} />
         <YouTubePromo list={youtubeList} />
-        {/* <Reviews /> */}
-        <Partners />
         <Footer />
       </Grid>
     </Box>
