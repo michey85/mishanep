@@ -7,8 +7,19 @@ import MoodleImg from '../assets/moodle-course-cover.jpg';
 import PugImg from '../assets/pug-course-cover.jpg';
 import RRImg from '../assets/redux-course.jpg';
 import TSImg from '../assets/ts.png';
+import FrontImg from '../assets/Front.png';
 
 export const courses = [
+  {
+    id: 8,
+    title: 'Пакет курсов Frontend',
+    subtitle: 'Шесть курсов для освоения профессии',
+    description:
+      'Пройдите путь от основ HTML до создания современных приложений на React и Redux.',
+    tags: ['HTML', 'JavaScript', 'React'],
+    stepik: 'https://stepik.org/a/180789?utm_source=mishanep&utm_medium=link&utm_campaign=directlink',
+    poster: FrontImg,
+  },
   {
     id: 0,
     title: 'Фундаментальный JavaScript',
@@ -22,7 +33,7 @@ export const courses = [
   {
     id: 1,
     title: 'React для начинающих',
-    subtitle: '+3 проекта в портфолио',
+    subtitle: 'Практика и 3 проекта в портфолио',
     description: 'React 17 от азов до создания полноценного SPA-приложения - с роутингом и продвинутым управлением состоянием.',
     tags: ['React', 'JavaScript', 'SPA'],
     link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=C8D631712EEDE9902114',
@@ -71,7 +82,7 @@ export const courses = [
   },
   {
     id: 6,
-    title: 'Шаблонизатор Pug (jade)',
+    title: 'Шаблонизатор Pug',
     subtitle: 'Ускорь свою верстку в несколько раз',
     description: 'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
     tags: ['Pug', 'HTML', 'JavaScript'],
@@ -82,7 +93,7 @@ export const courses = [
   {
     id: 7,
     title: 'Moodle 3 для администраторов',
-    subtitle: 'Своя обучающая платформа',
+    subtitle: 'Обучающая платформа',
     description:
       'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
     tags: ['LMS', 'CMS', 'Moodle'],

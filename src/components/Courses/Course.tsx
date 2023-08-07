@@ -16,8 +16,8 @@ export interface CourseProps {
     subtitle: string;
     description: string;
     tags: string[];
-    link: string;
     poster: string;
+    link?: string;
     stepik?: string;
 }
 
@@ -36,11 +36,11 @@ const Course: React.FC<CourseProps> = (props) => {
         textAlign={'center'}
       >
         <Avatar
-          size={'xl'}
+          size="xl"
           src={poster}
           name={title + ' ' + subtitle}
           mb={4}
-          pos={'relative'}
+          pos="relative"
         />
         <Heading fontSize={'2xl'} fontFamily={'body'}>
           {title}
@@ -69,25 +69,27 @@ const Course: React.FC<CourseProps> = (props) => {
         </Stack>
 
         <Stack mt={8} direction={'row'} spacing={4}>
-          <Button
-            flex={1}
-            as="a"
-            href={link}
-            fontSize={'sm'}
-            rounded={'full'}
-            bg={'blue.400'}
-            color={'white'}
-            boxShadow={
-              '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
-            }
-            _hover={{
-              bg: 'blue.500',
-            }}
-            _focus={{
-              bg: 'blue.500',
-            }}>
-                        На Udemy
-          </Button>
+          {link && (
+            <Button
+              flex={1}
+              as="a"
+              href={link}
+              fontSize={'sm'}
+              rounded={'full'}
+              bg={'blue.400'}
+              color={'white'}
+              boxShadow={
+                '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+              }
+              _hover={{
+                bg: 'blue.500',
+              }}
+              _focus={{
+                bg: 'blue.500',
+              }}>
+                На Udemy
+            </Button>
+          )}
           {stepik && (
             <Button
               flex={1}
