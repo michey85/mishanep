@@ -1,10 +1,5 @@
 import * as React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
+import { ChakraProvider, Box, theme } from '@chakra-ui/react';
 
 import { Hero } from '../Hero';
 import { Features } from '../Features';
@@ -18,14 +13,12 @@ import { courses, bio, youtubeList } from '../../data';
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh">
-        <Hero />
-        <Features />
-        <Courses courses={courses} />
-        <Bio text={bio} />
-        <YouTubePromo list={youtubeList} />
-        <Footer />
-      </Grid>
+      <Hero />
+      <Features />
+      <Courses courses={courses} />
+      <Bio text={bio} />
+      <YouTubePromo list={youtubeList} />
+      <Footer />
     </Box>
   </ChakraProvider>
 );
