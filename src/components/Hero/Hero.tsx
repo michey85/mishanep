@@ -34,10 +34,7 @@ function Hero() {
           w="full"
           maxW="lg"
         >
-          <MHeading
-            variants={item}
-            fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-          >
+          <MHeading variants={item} fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
             <Text
               as="span"
               position="relative"
@@ -59,13 +56,9 @@ function Hero() {
               Обучение веб-разработке
             </Text>{' '}
           </MHeading>
-          <MText
-            variants={item}
-            fontSize={{ base: 'md', lg: 'lg' }}
-            color="gray.500"
-          >
-            Научитесь создавать сайты разного уровня сложности. От простой
-            вёрстки до полноценной frontend-разработки.
+          <MText variants={item} fontSize={{ base: 'md', lg: 'lg' }} color="gray.500">
+            Научитесь создавать сайты разного уровня сложности. От простой вёрстки до
+            полноценной frontend-разработки.
           </MText>
           <MStack
             variants={item}
@@ -86,12 +79,7 @@ function Hero() {
             >
               Смотреть курсы
             </MButton>
-            <MButton
-              whileTap={{ scale: 0.9 }}
-              as="a"
-              href="#bio"
-              rounded="full"
-            >
+            <MButton whileTap={{ scale: 0.9 }} as="a" href="#bio" rounded="full">
               О преподавателе
             </MButton>
           </MStack>
