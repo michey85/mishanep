@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Variants } from 'framer-motion';
+
 import { Flex, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Variants } from 'framer-motion';
 
 import { MButton, MStack, MText, MHeading, MImage } from '../../UI';
-
 import Img from '../../assets/hero.jpg';
 
 const container: Variants = {

@@ -1,1 +1,1 @@
-export {Reviews} from './Reviews';
+export { Reviews } from './Reviews';

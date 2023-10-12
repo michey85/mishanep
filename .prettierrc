@@ -9,14 +9,7 @@
   "printWidth": 90,
   "arrowParens": "avoid",
   "endOfLine": "lf",
-  "plugins": [
-    "@trivago/prettier-plugin-sort-imports"
-  ],
-  "importOrder": [
-    "^react",
-    "<THIRD_PARTY_MODULES>",
-    "^\\.",
-    "^\\.."
-  ],
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["^react", "<THIRD_PARTY_MODULES>", "^\\.", "^\\.."],
   "importOrderSeparation": true
 }

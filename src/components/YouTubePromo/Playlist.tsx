@@ -1,14 +1,15 @@
 import * as React from 'react';
+
 import { Box, Text } from '@chakra-ui/react';
 
 export interface PlaylistProps {
-    id: number;
-    title: string;
-    link: string;
-    poster: string;
+  id: number;
+  title: string;
+  link: string;
+  poster: string;
 }
 
-const Playlist: React.FC<PlaylistProps> = ({ title, link, id, poster }) => {
+const Playlist: React.FC<PlaylistProps> = ({ title, link, poster }) => {
   return (
     <Box
       as="a"

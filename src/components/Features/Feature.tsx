@@ -1,11 +1,12 @@
 import * as React from 'react';
+
 import { Text, Stack, Flex } from '@chakra-ui/react';
 
 interface FeatureProps {
-    title: string;
-    text: string;
-    icon: React.ReactElement;
-    more?: React.ReactNode;
+  title: string;
+  text: string;
+  icon: React.ReactElement;
+  more?: React.ReactNode;
 }
 
 const Feature: React.FC<FeatureProps> = ({ title, text, icon, more }) => {
@@ -20,10 +21,13 @@ const Feature: React.FC<FeatureProps> = ({ title, text, icon, more }) => {
         color={'white'}
         rounded={'full'}
         bg={'gray.100'}
-        mb={1}>
+        mb={1}
+      >
         {icon}
       </Flex>
-      <Text fontWeight={600} fontSize={'4xl'}>{title}</Text>
+      <Text fontWeight={600} fontSize={'4xl'}>
+        {title}
+      </Text>
       <Text color={'gray.600'}>{text}</Text>
       {more}
     </Stack>

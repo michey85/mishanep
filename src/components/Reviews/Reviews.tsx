@@ -1,13 +1,10 @@
 import * as React from 'react';
+import { MdArrowBack, MdArrowForward } from 'react-icons/md';
 
 import { Box, Flex } from '@chakra-ui/react';
 import { motion, Variants, AnimatePresence } from 'framer-motion';
-import { MdArrowBack, MdArrowForward } from 'react-icons/md';
 
-import {
-  MHeading,
-  MBox,
-} from '../../UI';
+import { MHeading, MBox } from '../../UI';
 
 const animation: Variants = {
   hidden: { opacity: 0, y: 100 },
@@ -35,7 +32,12 @@ const variants: Variants = {
   }),
 };
 
-const reviews = ['2911664792485745', '2910022975983260', '2889852934666931', '2889337261385165'];
+const reviews = [
+  '2911664792485745',
+  '2910022975983260',
+  '2889852934666931',
+  '2889337261385165',
+];
 
 function Reviews() {
   const [[page, direction], setPage] = React.useState([0, 0]);
@@ -53,7 +55,7 @@ function Reviews() {
       setActiveBullet(reviews.length - 1);
     }
   };
-  
+
   return (
     <MBox
       bg="gray.50"
@@ -62,15 +64,22 @@ function Reviews() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <Box p={4} maxW="container.xl" mx="auto" style={{
-        position: 'relative',
-        overflow: 'hidden',
-        width: '100%',
-      }}>
-        <MHeading variants={animation} mb={8} id="courses" fontSize="5xl">Отзывы</MHeading>
+      <Box
+        p={4}
+        maxW="container.xl"
+        mx="auto"
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          width: '100%',
+        }}
+      >
+        <MHeading variants={animation} mb={8} id="courses" fontSize="5xl">
+          Отзывы
+        </MHeading>
         <AnimatePresence initial={false} exitBeforeEnter custom={direction}>
           <motion.div
-            style={{position: 'relative'}}
+            style={{ position: 'relative' }}
             key={page}
             custom={direction}
             variants={variants}
@@ -124,7 +133,7 @@ function Reviews() {
           mt="2"
           gap="4"
         >
-          <MdArrowBack onClick={() => paginate(-1)} style={{cursor: 'pointer'}} />
+          <MdArrowBack onClick={() => paginate(-1)} style={{ cursor: 'pointer' }} />
           {reviews.map((item, index) => (
             <Box
               key={item}
@@ -142,16 +151,14 @@ function Reviews() {
               }}
             />
           ))}
-          <MdArrowForward onClick={() => paginate(1)} style={{cursor: 'pointer'}} />
+          <MdArrowForward onClick={() => paginate(1)} style={{ cursor: 'pointer' }} />
         </Flex>
       </Box>
     </MBox>
-
   );
 }
 
 export { Reviews };
-
 
 const swipeConfidenceThreshold = 100;
 const swipePower = (offset: number, velocity: number): number => {

@@ -1,19 +1,13 @@
 import * as React from 'react';
-import { motion, Variants } from 'framer-motion';
+
 import { AlertIcon } from '@chakra-ui/react';
+import { motion, Variants } from 'framer-motion';
 
-import {
-  MAlert,
-  MHeading,
-  MBox,
-  MSimpleGrid,
-} from '../../UI';
-
+import { MAlert, MHeading, MBox, MSimpleGrid } from '../../UI';
 import { Course, CourseProps } from './Course';
 
-
 interface ICourses {
-    courses: CourseProps[];
+  courses: CourseProps[];
 }
 
 const titleAnimation: Variants = {
@@ -42,7 +36,7 @@ const coursesAnimation: Variants = {
   }),
 };
 
-const Courses: React.FC<ICourses> = (props) => {
+const Courses: React.FC<ICourses> = props => {
   const { courses } = props;
   return (
     <MBox
@@ -55,20 +49,18 @@ const Courses: React.FC<ICourses> = (props) => {
       mt="12"
     >
       <MHeading variants={titleAnimation} mb={8} id="courses" fontSize="5xl">
-                Видео курсы
+        Видео курсы
       </MHeading>
       <MAlert status="info" variants={alertAnimation} mb={8}>
         <AlertIcon />
         На Stepik.org осенью на все курсы действует промокод - OTONO23.
       </MAlert>
       <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        {
-          courses.map((course, index) => (
-            <motion.div key={course.id} custom={index + 1} variants={coursesAnimation}>
-              <Course {...course} />
-            </motion.div>
-          ))
-        }
+        {courses.map((course, index) => (
+          <motion.div key={course.id} custom={index + 1} variants={coursesAnimation}>
+            <Course {...course} />
+          </motion.div>
+        ))}
       </MSimpleGrid>
     </MBox>
   );

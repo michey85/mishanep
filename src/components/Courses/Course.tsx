@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import {
   Heading,
   Avatar,
@@ -11,18 +12,18 @@ import {
 } from '@chakra-ui/react';
 
 export interface CourseProps {
-    id: number;
-    title: string;
-    subtitle: string;
-    description: string;
-    tags: string[];
-    poster: string;
-    link?: string;
-    stepik?: string;
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  tags: string[];
+  poster: string;
+  link?: string;
+  stepik?: string;
 }
 
-const Course: React.FC<CourseProps> = (props) => {
-  const { title, subtitle, description, tags, link, poster, stepik } = props;
+const Course: React.FC<CourseProps> = props => {
+  const { title, subtitle, tags, link, poster, stepik } = props;
 
   return (
     <Center py={6}>
@@ -57,12 +58,7 @@ const Course: React.FC<CourseProps> = (props) => {
 
         <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
           {tags.map((tag, index) => (
-            <Badge
-              key={index}
-              px={2}
-              py={1}
-              bg="gray.50"
-              fontWeight={'400'}>
+            <Badge key={index} px={2} py={1} bg="gray.50" fontWeight={'400'}>
               {tag}
             </Badge>
           ))}
@@ -86,8 +82,9 @@ const Course: React.FC<CourseProps> = (props) => {
               }}
               _focus={{
                 bg: 'blue.500',
-              }}>
-                На Udemy
+              }}
+            >
+              На Udemy
             </Button>
           )}
           {stepik && (
@@ -109,7 +106,7 @@ const Course: React.FC<CourseProps> = (props) => {
                 bg: 'blue.500',
               }}
             >
-                          На Stepik
+              На Stepik
             </Button>
           )}
         </Stack>

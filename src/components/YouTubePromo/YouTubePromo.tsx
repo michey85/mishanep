@@ -1,16 +1,13 @@
 import * as React from 'react';
+
 import { SimpleGrid } from '@chakra-ui/react';
 import { motion, Variants } from 'framer-motion';
 
-import {
-  MHeading,
-  MBox,
-} from '../../UI';
-
+import { MHeading, MBox } from '../../UI';
 import { Playlist, PlaylistProps } from './Playlist';
 
 interface YuTubePtomoProps {
-    list: PlaylistProps[];
+  list: PlaylistProps[];
 }
 
 const titleAnimation: Variants = {
@@ -31,7 +28,7 @@ const playlistAnimation: Variants = {
   }),
 };
 
-const YouTubePromo: React.FC<YuTubePtomoProps> = (props) => {
+const YouTubePromo: React.FC<YuTubePtomoProps> = props => {
   const { list } = props;
 
   return (
@@ -44,16 +41,14 @@ const YouTubePromo: React.FC<YuTubePtomoProps> = (props) => {
       mx="auto"
     >
       <MHeading variants={titleAnimation} mb={12} fontSize="5xl">
-                Бесплатные курсы на YouTube
+        Бесплатные курсы на YouTube
       </MHeading>
       <SimpleGrid columns={[1, null, 3]} spacing={10}>
-        {
-          list.map((item, index) => (
-            <motion.div key={item.id} variants={playlistAnimation} custom={index + 1}>
-              <Playlist {...item} />
-            </motion.div>
-          ))
-        }
+        {list.map((item, index) => (
+          <motion.div key={item.id} variants={playlistAnimation} custom={index + 1}>
+            <Playlist {...item} />
+          </motion.div>
+        ))}
       </SimpleGrid>
     </MBox>
   );

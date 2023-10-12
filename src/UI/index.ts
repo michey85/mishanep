@@ -1,15 +1,23 @@
 import {
-  Alert, AlertProps,
-  Box, BoxProps,
+  Alert,
+  AlertProps,
+  Box,
+  BoxProps,
   Button,
-  Stack, StackProps,
-  Flex, FlexProps,
-  Text, TextProps,
-  Heading, HeadingProps,
-  Image, ImageProps,
-  SimpleGrid, SimpleGridProps,
+  Stack,
+  StackProps,
+  Flex,
+  FlexProps,
+  Text,
+  TextProps,
+  Heading,
+  HeadingProps,
+  Image,
+  ImageProps,
+  SimpleGrid,
+  SimpleGridProps,
 } from '@chakra-ui/react';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export const MAlert = motion<AlertProps>(Alert);
 export const MBox = motion<BoxProps>(Box);

@@ -1,15 +1,12 @@
 import * as React from 'react';
-import { Box, Icon } from '@chakra-ui/react';
 import { FcAssistant, FcIdea, FcVideoFile } from 'react-icons/fc';
+
+import { Box, Icon } from '@chakra-ui/react';
 import { motion, Variants } from 'framer-motion';
-import {
-  MHeading,
-  MBox,
-  MSimpleGrid,
-} from '../../UI';
+
+import { MHeading, MBox, MSimpleGrid } from '../../UI';
 import { ConsultFAQ } from '../ConsultFAQ';
 import { Feature } from './Feature';
-
 
 const titleAnimation: Variants = {
   hidden: { opacity: 0, y: 100 },
@@ -36,10 +33,12 @@ const Features: React.FC = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        maxW="container.xl" 
+        maxW="container.xl"
         mx="auto"
       >
-        <MHeading variants={titleAnimation} mb={12} fontSize="5xl">Что я предлагаю</MHeading>
+        <MHeading variants={titleAnimation} mb={12} fontSize="5xl">
+          Что я предлагаю
+        </MHeading>
         <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
           <motion.div custom={1} variants={featuresAnimation}>
             <Feature
@@ -55,18 +54,14 @@ const Features: React.FC = () => {
             <Feature
               icon={<Icon as={FcVideoFile} w={10} h={10} />}
               title={'Видео курсы'}
-              text={
-                'Записанные многочасовые видео курсы с обратной связью.'
-              }
+              text={'Записанные многочасовые видео курсы с обратной связью.'}
             />
           </motion.div>
           <motion.div custom={3} variants={featuresAnimation}>
             <Feature
               icon={<Icon as={FcIdea} w={10} h={10} />}
               title={'Обучение'}
-              text={
-                'Индивидуально, в группах, с практическими заданиями и code review.'
-              }
+              text={'Индивидуально, в группах, с практическими заданиями и code review.'}
             />
           </motion.div>
         </MSimpleGrid>

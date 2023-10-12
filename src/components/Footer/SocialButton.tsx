@@ -1,7 +1,7 @@
 import * as React from 'react';
+
 import {
-  chakra,
-  // useColorModeValue,
+  chakra, // useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
 
@@ -10,9 +10,9 @@ const SocialButton = ({
   label,
   href,
 }: {
-    children: React.ReactNode;
-    label: string;
-    href: string;
+  children: React.ReactNode;
+  label: string;
+  href: string;
 }) => {
   return (
     <chakra.button
@@ -31,7 +31,8 @@ const SocialButton = ({
       _hover={{
         // bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
         bg: 'blackAlpha.200',
-      }}>
+      }}
+    >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
