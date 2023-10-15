@@ -43,7 +43,7 @@ const Features: React.FC = () => {
           <motion.div custom={1} variants={featuresAnimation}>
             <Feature
               icon={<Icon as={FcAssistant} w={10} h={10} />}
-              title={'Консультации'}
+              title="Консультации"
               text={
                 'Для начинающих и практикующих разработчиков, а также для владельцев сайтов.'
               }

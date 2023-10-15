@@ -18,20 +18,20 @@ const Footer = () => {
         align={{ base: 'center', md: 'center' }}
       >
         <Text>&copy; {new Date().getFullYear()} Михаил Непомнящий</Text>
-        <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'https://twitter.com/pcgramota'}>
+        <Stack direction="row" spacing={6}>
+          <SocialButton label="Twitter" href="https://twitter.com/pcgramota">
             <FaTwitter />
           </SocialButton>
           <SocialButton
-            label={'YouTube'}
-            href={'https://www.youtube.com/channel/UCFq12kPZg4wTNPO7V_g3B-A'}
+            label="YouTube"
+            href="https://www.youtube.com/channel/UCFq12kPZg4wTNPO7V_g3B-A"
           >
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={'Facebook'} href={'https://www.facebook.com/pcgramota'}>
+          <SocialButton label="Facebook" href="https://www.facebook.com/pcgramota">
             <FaFacebook />
           </SocialButton>
-          <SocialButton label={'VK'} href={'https://vk.com/pcgramota'}>
+          <SocialButton label="VK" href="https://vk.com/pcgramota">
             <FaVk />
           </SocialButton>
         </Stack>

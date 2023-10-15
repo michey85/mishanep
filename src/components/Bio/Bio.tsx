@@ -46,7 +46,7 @@ const Bio: React.FC<BioProps> = props => {
             variants={bioAnimation}
             fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
           >
-            <Text color={'blue.400'} as={'span'}>
+            <Text color="blue.400" as="span">
               Михаил Непомнящий
             </Text>
           </MHeading>

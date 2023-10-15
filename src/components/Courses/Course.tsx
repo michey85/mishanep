@@ -28,13 +28,13 @@ const Course: React.FC<CourseProps> = props => {
   return (
     <Center py={6}>
       <Box
-        maxW={'320px'}
-        w={'full'}
+        maxW="320px"
+        w="full"
         bg="white"
-        boxShadow={'2xl'}
-        rounded={'lg'}
+        boxShadow="2xl"
+        rounded="lg"
         p={6}
-        textAlign={'center'}
+        textAlign="center"
       >
         <Avatar
           size="xl"
@@ -43,10 +43,10 @@ const Course: React.FC<CourseProps> = props => {
           mb={4}
           pos="relative"
         />
-        <Heading fontSize={'2xl'} fontFamily={'body'}>
+        <Heading fontSize="2xl" fontFamily="body">
           {title}
         </Heading>
-        <Text fontWeight={600} color={'gray.500'} mb={4}>
+        <Text fontWeight={600} color="gray.500" mb={4}>
           {subtitle}
         </Text>
         {/* <Text
@@ -56,24 +56,24 @@ const Course: React.FC<CourseProps> = props => {
           {description}
         </Text> */}
 
-        <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
+        <Stack align="center" justify="center" direction="row" mt={6}>
           {tags.map((tag, index) => (
-            <Badge key={index} px={2} py={1} bg="gray.50" fontWeight={'400'}>
+            <Badge key={index} px={2} py={1} bg="gray.50" fontWeight="400">
               {tag}
             </Badge>
           ))}
         </Stack>
 
-        <Stack mt={8} direction={'row'} spacing={4}>
+        <Stack mt={8} direction="row" spacing={4}>
           {link && (
             <Button
               flex={1}
               as="a"
               href={link}
-              fontSize={'sm'}
-              rounded={'full'}
-              bg={'blue.400'}
-              color={'white'}
+              fontSize="sm"
+              rounded="full"
+              bg="blue.400"
+              color="white"
               boxShadow={
                 '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
               }
@@ -92,10 +92,10 @@ const Course: React.FC<CourseProps> = props => {
               flex={1}
               as="a"
               href={stepik}
-              fontSize={'sm'}
-              rounded={'full'}
-              bg={'blue.600'}
-              color={'white'}
+              fontSize="sm"
+              rounded="full"
+              bg="blue.600"
+              color="white"
               boxShadow={
                 '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
               }

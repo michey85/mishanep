@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Stack } from '@chakra-ui/react';
 import { Variants } from 'framer-motion';
 
-import { MHeading, MBox, MImage } from '../../UI';
+import { MBox, MHeading, MImage } from '../../UI';
 import Epam from '../../assets/epam.png';
 import Gnivz from '../../assets/gnivz.png';
 import Specialist from '../../assets/specialist.png';
