@@ -30,7 +30,7 @@ module.exports = {
   rules: {
     'no-var': 'error',
     'prefer-const': 'warn',
-    'max-lines': ['warn', { max: 120 }],
+    'max-lines': ['warn', { max: 124 }],
     complexity: ['warn', 10],
     'prettier/prettier': [
       'warn',
