@@ -28,7 +28,7 @@ export const courses = [
     description:
       'Современный JavaScript с основ до продвинутых техник. Для начинающих и желающих закрыть пробелы.',
     tags: ['JavaScript'],
-    link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=20E322FCF50AD045AA5D',
+    link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=7A5243D8E3A8AD73F0CC',
     stepik: 'https://stepik.org/a/114165' + STEPIK_UTM,
     poster: JSImg,
   },
@@ -39,7 +39,7 @@ export const courses = [
     description:
       'React 17 от азов до создания полноценного SPA-приложения - с роутингом и продвинутым управлением состоянием.',
     tags: ['React', 'JavaScript', 'SPA'],
-    link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=03291ACF707DC2689CA9',
+    link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=B9B13F83D42C825069ED',
     stepik: 'https://stepik.org/a/114197' + STEPIK_UTM,
     poster: ReactImg,
   },
@@ -50,7 +50,7 @@ export const courses = [
     description:
       'Освойте принципы работы Redux - на классическом и современном вариантах использования.',
     tags: ['Redux', 'React', 'JavaScript'],
-    link: 'https://www.udemy.com/course/redux-react/?couponCode=474831C17FF7CB90E876',
+    link: 'https://www.udemy.com/course/redux-react/?couponCode=8A93287BE8D895CEDCD1',
     stepik: 'https://stepik.org/a/113714' + STEPIK_UTM,
     poster: RRImg,
   },
@@ -61,7 +61,7 @@ export const courses = [
     description:
       'От базовых типов до создания серьезных приложений на современном стеке.',
     tags: ['TypeScript', 'Redux', 'React'],
-    link: 'https://www.udemy.com/course/modern-typescript/?couponCode=F3A5F47F7EA74DE3CFB3',
+    link: 'https://www.udemy.com/course/modern-typescript/?couponCode=DA5380D695AE44F60A00',
     stepik: 'https://stepik.org/a/121859' + STEPIK_UTM,
     poster: TSImg,
   },
@@ -72,7 +72,7 @@ export const courses = [
     description:
       'Освойте множество крутых инструментов в одном курсе! Контроль версий, сборка, терминал, лайфхаки и многое другое.',
     tags: ['NPM', 'Terminal', 'Git'],
-    link: 'https://www.udemy.com/course/webtools/?couponCode=C0633EDC4E2EA6EDED90',
+    link: 'https://www.udemy.com/course/webtools/?couponCode=CC4954B779A9FEAA9522',
     stepik: 'https://stepik.org/a/114174' + STEPIK_UTM,
     poster: WebToolsImg,
   },
@@ -83,7 +83,7 @@ export const courses = [
     description:
       'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://www.udemy.com/course/web-coder/?couponCode=F11C9E9F70A9D3DA9613',
+    link: 'https://www.udemy.com/course/web-coder/?couponCode=62A573BB0DD3DD871821',
     stepik: 'https://stepik.org/a/120081' + STEPIK_UTM,
     poster: WebCoderImg,
   },
@@ -94,7 +94,7 @@ export const courses = [
     description:
       'Прокачайте свои навыки HTML-верстки, освоив современный инструмент веб-разработки - шаблонизатор/препроцессор Pug.',
     tags: ['Pug', 'HTML', 'JavaScript'],
-    link: 'https://www.udemy.com/course/pugjade-html/?couponCode=61E720E3A9CB89A05483',
+    link: 'https://www.udemy.com/course/pugjade-html/?couponCode=9D8A2BB6A8F3EB3B14EC',
     stepik: 'https://stepik.org/a/120077' + STEPIK_UTM,
     poster: PugImg,
   },
