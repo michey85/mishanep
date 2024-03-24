@@ -1,9 +1,9 @@
 import FrontImg from '../assets/Front.png';
 import JSImg from '../assets/js.jpg';
-import MoodleImg from '../assets/moodle-course-cover.jpg';
 import PugImg from '../assets/pug-course-cover.jpg';
 import ReactImg from '../assets/react.png';
 import RRImg from '../assets/redux-course.jpg';
+import TestingImg from '../assets/testing.png';
 import TSImg from '../assets/ts.png';
 import WebCoderImg from '../assets/webcoder-course-cover.jpg';
 import WebToolsImg from '../assets/webtools-cover-v1.png';
@@ -66,6 +66,17 @@ export const courses = [
     poster: TSImg,
   },
   {
+    id: 8,
+    title: 'Тестирование JS и React приложений',
+    subtitle: 'Для серьезного кода',
+    description:
+      'Освойте Jest и Testing Library - стандарты на рынке тестовых инструментов. Пишите тесты для своих проектов!',
+    tags: ['JavaScript', 'React', 'Jest'],
+    link: 'https://www.udemy.com/course/draft/5177956/?couponCode=D1AD1CF0200FEEB476AA',
+    poster: TestingImg,
+    stepik: 'https://stepik.org/a/200433' + STEPIK_UTM,
+  },
+  {
     id: 4,
     title: 'Инструменты разработчика',
     subtitle: 'Git, SSH, Webpack и другие',
@@ -98,14 +109,14 @@ export const courses = [
     stepik: 'https://stepik.org/a/120077' + STEPIK_UTM,
     poster: PugImg,
   },
-  {
-    id: 7,
-    title: 'Moodle 3 для администраторов',
-    subtitle: 'Обучающая платформа',
-    description:
-      'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
-    tags: ['LMS', 'CMS', 'Moodle'],
-    link: 'https://www.udemy.com/course/moodle3-admin/?couponCode=B3D510143F97D191A7F1',
-    poster: MoodleImg,
-  },
+  // {
+  //   id: 7,
+  //   title: 'Moodle 3 для администраторов',
+  //   subtitle: 'Обучающая платформа',
+  //   description:
+  //     'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
+  //   tags: ['LMS', 'CMS', 'Moodle'],
+  //   link: 'https://www.udemy.com/course/moodle3-admin/?couponCode=B3D510143F97D191A7F1',
+  //   poster: MoodleImg,
+  // },
 ];
