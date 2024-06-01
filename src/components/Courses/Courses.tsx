@@ -53,7 +53,7 @@ const Courses: React.FC<ICourses> = props => {
       </MHeading>
       <MAlert status="info" variants={alertAnimation} mb={8}>
         <AlertIcon />
-        На Stepik.org весной на все курсы действует промокод - VERANO24.
+        На Stepik.org <b>летом</b> на все курсы действует промокод - <b>SUMMERTIME</b>.
       </MAlert>
       <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         {courses.map((course, index) => (
