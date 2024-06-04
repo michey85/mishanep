@@ -70,6 +70,7 @@ const Course: React.FC<CourseProps> = props => {
               flex={1}
               as="a"
               href={link}
+              target="_blank"
               fontSize="sm"
               rounded="full"
               bg="blue.400"
