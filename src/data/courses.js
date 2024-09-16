@@ -12,7 +12,7 @@ const STEPIK_UTM = '?utm_source=mishanep&utm_medium=link&utm_campaign=directlink
 
 export const courses = [
   {
-    id: 8,
+    id: 10,
     title: 'Пакет курсов Frontend',
     subtitle: 'Шесть курсов для освоения профессии',
     description:
