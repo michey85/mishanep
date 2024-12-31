@@ -88,7 +88,7 @@ export const ConsultFAQ = () => {
                   </Chakra.AccordionButton>
                 </h2>
                 <Chakra.AccordionPanel pb={4}>
-                  30 минутная консультации стоит <strong>2500 рублей</strong> при оплате
+                  30 минутная консультация стоит <strong>2500 рублей</strong> при оплате
                   на российскую карту или <strong>25 евро</strong> при переводе на
                   европейскую карту или PayPal.
                 </Chakra.AccordionPanel>
