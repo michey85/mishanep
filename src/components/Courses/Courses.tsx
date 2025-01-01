@@ -53,7 +53,7 @@ const Courses: React.FC<ICourses> = props => {
       </MHeading>
       <MAlert status="info" variants={alertAnimation} mb={8}>
         <AlertIcon />
-        На Stepik.org до конца 2024-го на все курсы действует промокод - TIMETOCODE.
+        На Stepik.org до конца марта 2025-го на все курсы действует промокод - HELLOMISHA.
       </MAlert>
       <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         {courses.map((course, index) => (
