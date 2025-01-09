@@ -61,7 +61,7 @@ const Features: React.FC = () => {
             <Feature
               icon={<Icon as={FcIdea} w={10} h={10} />}
               title={'Обучение'}
-              text={'Индивидуально, в группах, с практическими заданиями и code review.'}
+              text={'Индивидуальные проекты и code review.'}
             />
           </motion.div>
         </MSimpleGrid>

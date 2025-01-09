@@ -57,8 +57,9 @@ function Hero() {
             </Text>{' '}
           </MHeading>
           <MText variants={item} fontSize={{ base: 'md', lg: 'lg' }} color="gray.500">
-            Научитесь создавать сайты разного уровня сложности. От простой вёрстки до
-            полноценной frontend-разработки.
+            Меня зовут <strong>Михаил Непомнящий</strong> и я обучаю созданию сайтов
+            разного уровня сложности. От простой вёрстки до полноценной
+            frontend-разработки.
           </MText>
           <MStack
             variants={item}
@@ -71,15 +72,27 @@ function Hero() {
               as="a"
               href="#courses"
               rounded="full"
+              bg="black"
+              color="white"
+              _hover={{
+                bg: 'black',
+              }}
+              size="lg"
+            >
+              Мои курсы
+            </MButton>
+            <MButton
+              whileTap={{ scale: 0.9 }}
+              as="a"
+              href="#bio"
+              rounded="full"
+              size="lg"
               bg="blue.400"
               color="white"
               _hover={{
                 bg: 'blue.500',
               }}
             >
-              Смотреть курсы
-            </MButton>
-            <MButton whileTap={{ scale: 0.9 }} as="a" href="#bio" rounded="full">
               О преподавателе
             </MButton>
           </MStack>

@@ -65,6 +65,29 @@ const Course: React.FC<CourseProps> = props => {
         </Stack>
 
         <Stack mt={8} direction="row" spacing={4}>
+          {stepik && (
+            <Button
+              flex={1}
+              as="a"
+              href={stepik}
+              target="_blank"
+              fontSize="sm"
+              rounded="full"
+              bg="black"
+              color="white"
+              boxShadow={
+                '0px 1px 25px -5px rgb(166 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+              }
+              _hover={{
+                bg: 'black',
+              }}
+              _focus={{
+                bg: 'black',
+              }}
+            >
+              На Stepik
+            </Button>
+          )}
           {link && (
             <Button
               flex={1}
@@ -86,28 +109,6 @@ const Course: React.FC<CourseProps> = props => {
               }}
             >
               На Udemy
-            </Button>
-          )}
-          {stepik && (
-            <Button
-              flex={1}
-              as="a"
-              href={stepik}
-              fontSize="sm"
-              rounded="full"
-              bg="blue.600"
-              color="white"
-              boxShadow={
-                '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
-              }
-              _hover={{
-                bg: 'blue.500',
-              }}
-              _focus={{
-                bg: 'blue.500',
-              }}
-            >
-              На Stepik
             </Button>
           )}
         </Stack>
