@@ -10,7 +10,7 @@ const Footer = () => {
     <Box bg="gray.50" color="gray.700">
       <Container
         as={Stack}
-        maxW={'6xl'}
+        maxW="6xl"
         py={4}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
