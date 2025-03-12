@@ -4204,9 +4204,9 @@ core-js@^3.19.2:
   integrity sha512-HoZr92+ZjFEKar5HS6MC776gYslNOKHt75mEBKWKnPeFDpZ6nH5OeF3S6HFT1mUAUZKrzkez05VboaX8myjSuw==
 
 core-js@^3.38.1:
-  version "3.38.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.38.1.tgz#aa375b79a286a670388a1a363363d53677c0383e"
-  integrity sha512-OP35aUorbU3Zvlx7pjsFdu1rGNnD4pgw/CWoYzRY3t2EzoVT7shKHY1dlAy3f41cGIO7ZDPQimhGFTlEYkG/Hw==
+  version "3.41.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.41.0.tgz#57714dafb8c751a6095d028a7428f1fb5834a776"
+  integrity sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -9159,10 +9159,10 @@ postcss@^8.3.5, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.4:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-posthog-js@^1.173.0:
-  version "1.173.0"
-  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.173.0.tgz#9b86b20ee64cb35e5a01531128f8fb9a7e9d3883"
-  integrity sha512-Qow8ZLPXB6ejR7Vu679CbBYwhSj4RKd0m896ggme1SDjBIu0dWJgWLpx34hKrtZ7EStW7r4qf5+xmktgAwa3Jg==
+posthog-js@^1.230.2:
+  version "1.230.2"
+  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.230.2.tgz#c6133cf5757d4f4067a2e7c7d4facec2fab22bfc"
+  integrity sha512-MciEotiLuByI2L7NMrGYR48yVvurekkCETjPoCmI8XLeDi33L+6glR7mCUH8xQxaoFr3FqK61HlUmvTApnzOgg==
   dependencies:
     core-js "^3.38.1"
     fflate "^0.4.8"
@@ -9170,9 +9170,9 @@ posthog-js@^1.173.0:
     web-vitals "^4.2.0"
 
 preact@^10.19.3:
-  version "10.24.0"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.24.0.tgz#bd8139bee35aafede3c6de96d2453982610dfeef"
-  integrity sha512-aK8Cf+jkfyuZ0ZZRG9FbYqwmEiGQ4y/PUO4SuTWoyWL244nZZh7bd5h2APd4rSNDYTBNghg1L+5iJN3Skxtbsw==
+  version "10.26.4"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.26.4.tgz#b514f4249453a4247c82ff6d1267d59b7d78f9f9"
+  integrity sha512-KJhO7LBFTjP71d83trW+Ilnjbo+ySsaAgCfXOXUlmGzJ4ygYPWmysm77yg4emwfmoz3b22yvH5IsVFHbhUaH5w==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
@@ -11324,9 +11324,9 @@ web-streams-polyfill@^3.1.1:
   integrity sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
 
 web-vitals@^4.2.0:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-4.2.3.tgz#270c4baecfbc6ec6fc15da1989e465e5f9b94fb7"
-  integrity sha512-/CFAm1mNxSmOj6i0Co+iGFJ58OS4NRGVP+AWS/l509uIK5a1bSoIVaHz/ZumpHTfHSZBpgrJ+wjfpAOrTHok5Q==
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-4.2.4.tgz#1d20bc8590a37769bd0902b289550936069184b7"
+  integrity sha512-r4DIlprAGwJ7YM11VZp4R884m0Vmgr6EAKe3P+kO0PPj3Unqyvv59rczf6UiGcb9Z8QxZVcqKNwv/g0WNdWwsw==
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
