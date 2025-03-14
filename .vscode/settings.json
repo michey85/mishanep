@@ -2,5 +2,15 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "workbench.colorCustomizations": {
     "activityBar.background": "#5a5c5a"
-  }
+  },
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "use TypeScript for all code. use camelCase for variable names, PascalCase for class names. Use spaces for indentation. Use single quotes for strings. Use 2 spaces for indentation."
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Be extremely detailed with the file changes and the reason for the change. Use lots of emojis."
+    }
+  ],
 }

@@ -14,7 +14,7 @@ const container = document.getElementById('root') as Element;
 const root = createRoot(container);
 
 root.render(
-  <PostHogProvider apiKey={process.env.REACT_APP_PUBLIC_POSTHOG_KEY} options={options}>
+  <PostHogProvider apiKey={process.env.REACT_APP_PUBLIC_POSTHOG_KEY!} options={options}>
     <App />
   </PostHogProvider>,
 );
