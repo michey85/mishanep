@@ -13,4 +13,9 @@
       "text": "Be extremely detailed with the file changes and the reason for the change. Use lots of emojis."
     }
   ],
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "text": "Prefer to use Ramda library for functional programming. Use the pipe function to compose functions. Use the curry function to create curried functions."
+    }
+  ],
 }
