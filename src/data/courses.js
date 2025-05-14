@@ -8,7 +8,7 @@ import TSImg from '../assets/ts.png';
 import WebCoderImg from '../assets/webcoder-course-cover.jpg';
 import WebToolsImg from '../assets/webtools-cover-v1.png';
 
-const STEPIK_UTM = '?utm_source=mishanep&utm_medium=link&utm_campaign=directlink';
+const STEPIK_UTM = '&utm_source=mishanep&utm_medium=link&utm_campaign=directlink';
 
 export const courses = [
   {
@@ -18,7 +18,7 @@ export const courses = [
     description:
       'Пройдите путь от основ HTML до создания современных приложений на React и Redux.',
     tags: ['HTML', 'JavaScript', 'React'],
-    stepik: 'https://stepik.org/a/180789' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/180789/pay?promo=d7476acb39627fab' + STEPIK_UTM,
     poster: FrontImg,
   },
   {
@@ -27,7 +27,7 @@ export const courses = [
     subtitle: '4 курса для фронтенд-разработчика',
     description: 'JavaScript, React, Redux и создание тестов к ним.',
     tags: ['JavaScript', 'React', 'Redux'],
-    stepik: 'https://stepik.org/a/204117' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/204117/pay?promo=ad2935b98dacf571' + STEPIK_UTM,
     poster: JSPackageImg,
   },
   {
@@ -38,7 +38,7 @@ export const courses = [
       'Современный JavaScript с основ до продвинутых техник. Для начинающих и желающих закрыть пробелы.',
     tags: ['JavaScript'],
     link: 'https://www.udemy.com/course/fundamental-javascript/?couponCode=D398013FC8C9EBEF0731',
-    stepik: 'https://stepik.org/a/114165' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/114165/pay?promo=87d7a939552c931c' + STEPIK_UTM,
     poster: JSImg,
   },
   {
@@ -49,7 +49,7 @@ export const courses = [
       'React 17 от азов до создания полноценного SPA-приложения - с роутингом и продвинутым управлением состоянием.',
     tags: ['React', 'JavaScript', 'SPA'],
     link: 'https://www.udemy.com/course/react-from-scratch/?couponCode=242DCBD8E123252C6CA0',
-    stepik: 'https://stepik.org/a/114197' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/114197/pay?promo=fd5923345f575e90' + STEPIK_UTM,
     poster: ReactImg,
   },
   {
@@ -60,7 +60,7 @@ export const courses = [
       'Освойте принципы работы Redux - на классическом и современном вариантах использования.',
     tags: ['Redux', 'React', 'JavaScript'],
     link: 'https://www.udemy.com/course/redux-react/?couponCode=563605675C87C1B18001',
-    stepik: 'https://stepik.org/a/113714' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/113714/pay?promo=00402710b0a28182' + STEPIK_UTM,
     poster: RRImg,
   },
   {
@@ -71,7 +71,7 @@ export const courses = [
       'От базовых типов до создания серьезных приложений на современном стеке.',
     tags: ['TypeScript', 'Redux', 'React'],
     link: 'https://www.udemy.com/course/modern-typescript/?couponCode=A7B92DBFBD7D735E7D90',
-    stepik: 'https://stepik.org/a/121859' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/121859/pay?promo=2419586b3423a7db' + STEPIK_UTM,
     poster: TSImg,
   },
   {
@@ -83,7 +83,7 @@ export const courses = [
     tags: ['JavaScript', 'React', 'Jest'],
     link: 'https://www.udemy.com/course/draft/5177956/?couponCode=3C6CD95E1522465F6B25',
     poster: TestingImg,
-    stepik: 'https://stepik.org/a/200433' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/200433/pay?promo=e7d6e46070e72c83' + STEPIK_UTM,
   },
   {
     id: 4,
@@ -93,7 +93,7 @@ export const courses = [
       'Освойте множество крутых инструментов в одном курсе! Контроль версий, сборка, терминал, лайфхаки и многое другое.',
     tags: ['NPM', 'Terminal', 'Git'],
     link: 'https://www.udemy.com/course/webtools/?couponCode=67928FC7D494DB9513D5',
-    stepik: 'https://stepik.org/a/114174' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/114174/pay?promo=4b4315421805f30b' + STEPIK_UTM,
     poster: WebToolsImg,
   },
   {
@@ -104,7 +104,7 @@ export const courses = [
       'Освойте минимально необходимые технологии современной верстки сайтов и начните работать веб-разработчиком в IT сфере!',
     tags: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://www.udemy.com/course/web-coder/?couponCode=71AEE24CC673276F8589',
-    stepik: 'https://stepik.org/a/120081' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/120081/pay?promo=ac333871c4841cc1' + STEPIK_UTM,
     poster: WebCoderImg,
   },
 ];
