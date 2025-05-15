@@ -1,16 +1,28 @@
-import FrontImg from '../assets/Front.png';
-import JSPackageImg from '../assets/js-react-package.png';
-import JSImg from '../assets/js.jpg';
-import ReactImg from '../assets/react.png';
+import BEforFE from '../assets/be-for-fe.png';
+import FrontImg from '../assets/fe-package-course.png';
+import JSImg from '../assets/js-course.png';
+import MoodleImg from '../assets/moodle-course-cover.jpg';
+import ReactImg from '../assets/react-course.png';
+import JSPackageImg from '../assets/react-js-package.png';
 import RRImg from '../assets/redux-course.jpg';
 import TestingImg from '../assets/testing.png';
-import TSImg from '../assets/ts.png';
+import WebToolsImg from '../assets/tools-course.png';
+import TSImg from '../assets/ts-course.png';
 import WebCoderImg from '../assets/webcoder-course-cover.jpg';
-import WebToolsImg from '../assets/webtools-cover-v1.png';
 
 const STEPIK_UTM = '&utm_source=mishanep&utm_medium=link&utm_campaign=directlink';
 
 export const courses = [
+  {
+    id: 11,
+    title: 'Node.js для фронта',
+    subtitle: 'Первый шаг в бэкенд-разработку',
+    description:
+      'Для тех, кто знаком с фронтендом и хочет сделать первые шаги к бэкенду.',
+    tags: ['Node.js', 'JavaScript', 'Express'],
+    stepik: 'https://stepik.org/a/233860/pay?promo=d30da7468ee441d0' + STEPIK_UTM,
+    poster: BEforFE,
+  },
   {
     id: 10,
     title: 'Пакет курсов Frontend',
@@ -106,5 +118,15 @@ export const courses = [
     link: 'https://www.udemy.com/course/web-coder/?couponCode=71AEE24CC673276F8589',
     stepik: 'https://stepik.org/a/120081/pay?promo=ac333871c4841cc1' + STEPIK_UTM,
     poster: WebCoderImg,
+  },
+  {
+    id: 7,
+    title: 'Moodle 3 для администраторов',
+    subtitle: 'Своя обучающая платформа',
+    description:
+      'Получите необходимые навыки для создания собственной обучающей платформы с готовой системой Moodle.',
+    tags: ['LMS', 'CMS', 'Moodle'],
+    link: 'https://www.udemy.com/course/moodle3-admin/?couponCode=164513AF38E1F43AE2D9',
+    poster: MoodleImg,
   },
 ];
