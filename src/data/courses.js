@@ -1,14 +1,14 @@
 import BEforFE from '../assets/be-for-fe.png';
+import WebCoderImg from '../assets/css-course.png';
 import FrontImg from '../assets/fe-package-course.png';
+import TestingImg from '../assets/jest-course.png';
 import JSImg from '../assets/js-course.png';
 import MoodleImg from '../assets/moodle-course-cover.jpg';
 import ReactImg from '../assets/react-course.png';
 import JSPackageImg from '../assets/react-js-package.png';
-import RRImg from '../assets/redux-course.jpg';
-import TestingImg from '../assets/testing.png';
+import RRImg from '../assets/redux-course.png';
 import WebToolsImg from '../assets/tools-course.png';
 import TSImg from '../assets/ts-course.png';
-import WebCoderImg from '../assets/webcoder-course-cover.jpg';
 
 const STEPIK_UTM = '&utm_source=mishanep&utm_medium=link&utm_campaign=directlink';
 
