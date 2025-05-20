@@ -20,7 +20,7 @@ export const courses = [
     description:
       'Для тех, кто знаком с фронтендом и хочет сделать первые шаги к бэкенду.',
     tags: ['Node.js', 'JavaScript', 'Express'],
-    stepik: 'https://stepik.org/a/233860/pay?promo=d30da7468ee441d0' + STEPIK_UTM,
+    stepik: 'https://stepik.org/a/233860/pay?promo=b62bb053b0c9c10c' + STEPIK_UTM,
     poster: BEforFE,
   },
   {
