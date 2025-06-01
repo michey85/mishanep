@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import { AlertIcon } from '@chakra-ui/react';
 import { motion, Variants } from 'framer-motion';
 
-import { MAlert, MBox, MHeading, MSimpleGrid } from '../../UI';
+import { MBox, MHeading, MSimpleGrid } from '../../UI';
 import { Course, CourseProps } from './Course';
 
 interface ICourses {
@@ -51,11 +50,11 @@ const Courses: React.FC<ICourses> = props => {
       <MHeading variants={titleAnimation} mb={8} id="courses" fontSize="5xl">
         Видео курсы
       </MHeading>
-      <MAlert status="info" variants={alertAnimation} mb={8} bg="blue.400" color="white">
+      {/* <MAlert status="info" variants={alertAnimation} mb={8} bg="blue.400" color="white">
         <AlertIcon />
         На Stepik.org до конца мая 2025-го на все курсы действует промокод{''}
         <b style={{ marginLeft: '0.5rem' }}>PRIMAVERA25</b>.
-      </MAlert>
+      </MAlert> */}
       <MSimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         {courses.map((course, index) => (
           <motion.div key={course.id} custom={index + 1} variants={coursesAnimation}>
