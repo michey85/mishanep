@@ -4,7 +4,7 @@ const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 test.describe('Course links', () => {
   test('all stepik course links lead to external sites with discount', async ({ page, context }) => {
-    await page.goto('http://localhost:3000');
+    await page.goto('/');
 
     const links = await page.$$('[data-provider="stepik"]');
 
@@ -19,7 +19,7 @@ test.describe('Course links', () => {
 
       const [newPage] = await Promise.all([
         context.waitForEvent('page'),
-        link.click({ button: 'middle' }), // open in new tab
+        link.click({ button: 'middle' }),
       ]);
       await sleep(2000);
       await newPage.waitForLoadState('domcontentloaded');
@@ -43,7 +43,7 @@ test.describe('Course links', () => {
 
       const [newPage] = await Promise.all([
         context.waitForEvent('page'),
-        link.click({ button: 'middle' }), // open in new tab
+        link.click({ button: 'middle' }),
       ]);
       await sleep(1500);
       await newPage.waitForLoadState('domcontentloaded');
