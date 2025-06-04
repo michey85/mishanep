@@ -8,7 +8,7 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "framer-motion": "^9.1.7",
-    "posthog-js": "^1.230.2",
+    "posthog-js": "^1.249.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^4.12.0",
@@ -17,10 +17,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "vercel --prod",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "test": "playwright test --config=playwright.config.ts"
   },
   "browserslist": {
     "production": [
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@playwright/test": "^1.52.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^18.14.0",
     "@types/react": "^18.3.11",
@@ -46,6 +47,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.1",
+    "husky": "^9.1.7",
     "prettier": "^3.3.3",
     "typescript": "^4.9.5",
     "vercel": "^24.2.5"

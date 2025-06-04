@@ -1,14 +1,14 @@
 import * as React from 'react';
 
 import {
-  Heading,
   Avatar,
-  Box,
-  Center,
-  Text,
-  Stack,
-  Button,
   Badge,
+  Box,
+  Button,
+  Center,
+  Heading,
+  Stack,
+  Text,
 } from '@chakra-ui/react';
 
 export interface CourseProps {
@@ -70,6 +70,7 @@ const Course: React.FC<CourseProps> = props => {
               flex={1}
               as="a"
               href={stepik}
+              data-provider="stepik"
               target="_blank"
               fontSize="sm"
               rounded="full"
@@ -93,6 +94,7 @@ const Course: React.FC<CourseProps> = props => {
               flex={1}
               as="a"
               href={link}
+              data-provider="udemy"
               target="_blank"
               fontSize="sm"
               rounded="full"
